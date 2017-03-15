@@ -10453,12 +10453,6 @@ h2.porto.title a:focus {
 	color: rosybrown;
 }
 
-@media screen and (max-width: 767px) and (min-width: 1px) {
-	.events-container li .day {
-		font-size: 2em !important;
-	}
-}
-
 .events-container a {
 	color: rosybrown;
 }
@@ -10508,6 +10502,27 @@ h2.porto.title a:focus {
 
 .events-container li:first-child {
 	margin-top: 2px;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+	.events-container li .day {
+		font-size: 2em !important;
+	}
+	.events-container h3 {
+		font-size: 1.6rem !important;
+		line-height: normal !important;
+	}
+	.events-container p {
+		font-size: 1rem !important;
+	}
+	.events-container li .month {
+		margin-top: -6px !important;
+		font-size: 1.4rem !important;
+	}
+	.events-container li .day {
+		margin-top: -6px !important;
+		font-size: 2rem !important;
+	}
 }
 
 /*ratios for the placeholder on load for images*/
