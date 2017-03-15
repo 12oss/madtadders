@@ -50,11 +50,14 @@
 }
 
 .events-container a {
-	position: relative;
-	display: block;
-	float: right;
-	color: #222;
-	width: 1px;
+	color: rosybrown;
+}
+
+.events-container a:hover,
+.events-container ul a:focus,
+.events-container ul a:hover {
+	text-decoration: none !important;
+	border-bottom: none !important;
 }
 
 .events-container p {
@@ -76,6 +79,7 @@
 .location {
 	font-size: 1.2rem;
 	-webkit-font-smoothing: antialiased;
+	font-weight: 700;
 }
 
 .duration {
