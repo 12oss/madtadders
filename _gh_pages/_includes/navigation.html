@@ -1,0 +1,101 @@
+<style>
+.navbar-collapse {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+
+#navbar-primary .navbar-nav {
+	background: #111;
+	width: 100%;
+	text-align: center;
+}
+
+#navbar-primary .navbar-nav>li {
+	display: inline-block;
+	float: none;
+}
+
+#navbar-primary .navbar-nav>li>a {
+	padding-left: 15px;
+	padding-right: 15px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+img.logo-nav-mobile {
+	display: none;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+	#navbar-primary .navbar-nav>li {
+		display: block;
+		float: none;
+		text-align: left;
+		padding: 5px 15px;
+	}
+	#navbar-primary .navbar-nav>li>a {
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
+	img.logo-nav-mobile {
+		text-align: center;
+		margin: auto;
+		width: 50%;
+		position: relative;
+		left: 50%;
+		-webkit-transform: translateX(-50%);
+		-moz-transform: translateX(-50%);
+		-ms-transform: translateX(-50%);
+		transform: translateX(-50%);
+		max-width: 100px;
+		display: inline;
+	}
+}
+</style>
+<nav id="navbar-primary" class="navbar navbar-inverse" role="navigation">
+	<div class="container-fluid">
+		<!-- Brand and toggle get grouped for better mobile display -->
+		<div class="navbar-header">
+			<a href="{{ site.baseurl }}/">
+				<img class="logo-nav-mobile" src="{{ site.baseurl }}/assets/css/images/wordmark-sq-600.svg" width="200" alt="The Mad Tadders Logo">
+			</a>
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-primary-collapse">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+		</div>
+		<div class="collapse navbar-collapse" id="navbar-primary-collapse">
+			<ul class="nav navbar-nav">
+				<li class="visible-xs">
+					<a href="{{ site.baseurl }}/">Upcoming Events</a>
+				</li>
+				<li>
+					<a href="{{ site.baseurl }}/aboutus">About Us</a>
+				</li>
+				<li>
+					<a href="{{ site.baseurl }}/livemusic">Live Samples</a>
+				</li>
+				<li class="hidden-xs">
+					<a href="{{ site.baseurl }}/">
+						<img class="hidden-xs" id="logo-navbar-middle" src="{{ site.baseurl }}/assets/css/images/wordmark-sq-600.svg" width="200" alt="The Mad Tadders Logo">
+					</a>
+				</li>
+				<!--<li>
+					<a href="{{ site.baseurl }}/photos">Photos</a>
+				</li>-->
+				<li>
+					<a href="{{ site.baseurl }}/setlist">Set List</a>
+				</li>
+				<li>
+					<a href="{{ site.baseurl }}/contact">Contact Us</a>
+				</li>
+			</ul>
+		</div>
+		<!-- /.navbar-collapse -->
+	</div>
+	<!-- /.container-fluid -->
+</nav>

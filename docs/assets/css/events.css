@@ -1,0 +1,97 @@
+.events-container {
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.events-container li {
+	overflow: hidden;
+	margin: 25px 0px;
+	padding: 25px;
+	background-color: #fefefe;
+	border-radius: 3px;
+	list-style: none;
+}
+
+.events-container li .date {
+	float: left;
+	padding: 0.125em 0.75em 0 0;
+	margin-left: 0.25em;
+	margin-right: 0.75em;
+	font-weight: bold;
+	text-align: center;
+	border-right: 2px solid #999;
+}
+
+.events-container li .weekday,
+.events-container li .day,
+.events-container li .month {
+	display: block;
+}
+
+.events-container li .weekday {
+	font-size: 1em;
+}
+
+.events-container li .month {
+	margin-top: -12px;
+	font-size: 1.4em;
+}
+
+.events-container li .day {
+	margin-top: -6px;
+	font-size: 3em;
+	color: rosybrown;
+}
+
+@media screen and (max-width: 767px) and (min-width: 1px) {
+	.events-container li .day {
+		font-size: 2em !important;
+	}
+}
+
+.events-container a {
+	position: relative;
+	display: block;
+	float: right;
+	color: #222;
+	width: 1px;
+}
+
+.events-container p {
+	margin-top: 10px;
+	border-top: 1px solid lightgray;
+	padding-top: 5px;
+	margin-right: 10%;
+}
+
+.events-container h3 {
+	font-weight: 700;
+	margin-bottom: 3px;
+	margin-top: 0px;
+	font-size: 2.6rem;
+	line-height: 2rem;
+}
+
+.duration,
+.location {
+	font-size: 1.2rem;
+	-webkit-font-smoothing: antialiased;
+}
+
+.duration {
+	margin-right: 0.25em;
+	padding-left: 0.1em;
+	padding-right: 0.5em;
+	border-right: 1px solid #999;
+}
+
+.events-container li.next .date {
+	border-right-color: green;
+	border-width: 0.25em;
+	margin-right: 0.75em;
+	padding-right: 0.625em;
+}
+
+.events-container li:first-child {
+	margin-top: 2px;
+}
