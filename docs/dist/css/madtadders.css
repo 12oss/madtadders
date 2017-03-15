@@ -9803,6 +9803,7 @@ section.row {
 .max-1080 {
 	max-width: 1080px;
 	margin: auto;
+	padding: 0px 10px;
 }
 
 .max-850 {
@@ -10983,7 +10984,6 @@ h2.porto.title a:focus {
 
 .breadcrumbs .breadcrumb-item {
 	font-size: 1em;
-	font-family: "nimbus-sans-condensed";
 }
 
 a.breadcrumb-item {

@@ -310,6 +310,7 @@ section.row {
 .max-1080 {
 	max-width: 1080px;
 	margin: auto;
+	padding: 0px 10px;
 }
 
 .max-850 {
