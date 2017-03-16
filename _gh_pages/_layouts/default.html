@@ -6,9 +6,8 @@ layout: compress
 
 <head>
 	{% seo %}
-	<!--	<title>{{ page.title }}</title>
-	{% if page.description %}
-	<meta name="description" content="{{ page.description }}">{% endif %} -->
+	<title>{%if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+	<meta itemprop="description" name="description" content="{% if page.description %}{{ page.description | truncate: 160 }}{% else %}{{ site.description | truncate: 160  }}{% endif %}" />
 	{% include header.html %}
 	<style>
 	.hideload {
