@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: The Mad Tadders | Southern WI Live Music
+title: 
 email: madtadders@gmail.com
 description: 
   twitter:
@@ -34,11 +34,11 @@ author:
   twitter: 
 
 #Teaser Image
-image: /assets/css/images/wordmark-sq-600.svg
+image: /assets/css/images/tadders.png
 
 
 #Logo
-logo: /assets/css/images/wordmark-sq-600.svg
+logo: /assets/css/images/tadders.png
 
 #Pagination
 paginate: 10
