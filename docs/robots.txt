@@ -5,5 +5,7 @@ User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
 Disallow: /styleguide/
+Disallow: /photos/
+Disallow: /blog/
 Disallow: /_template/
 Sitemap: http://www.secondcropcreative.com/sitemap.xml
