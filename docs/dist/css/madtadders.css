@@ -9468,7 +9468,7 @@ a.light-inverse:hover,
 	.copy-container-left {
 		text-align: center !important;
 	}
-	.copy-container-center {
+	.txt-center-m, .copy-container-center {
 		text-align: center !important;
 	}
 	.copy-container-right {
@@ -9479,6 +9479,7 @@ a.light-inverse:hover,
 	.img-caption-center {
 		font-size: 10px
 	}
+
 }
 
 @media (max-width: 580px) {
