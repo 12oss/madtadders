@@ -38,7 +38,7 @@ image: /assets/css/images/tadders.png
 
 
 #Logo
-logo: /assets/css/images/tadders.png
+#logo: /assets/css/images/tadders.png
 
 #Pagination
 paginate: 10
