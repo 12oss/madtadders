@@ -17,10 +17,100 @@
 	<link rel="stylesheet" href="{{ site.baseurl }}/dist/css/min/madtadders.min.css">
 </noscript>
 <script>
-/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
-!function(a){"use strict";var b=function(b,c,d){function j(a){if(e.body)return a();setTimeout(function(){j(a)})}function l(){f.addEventListener&&f.removeEventListener("load",l),f.media=d||"all"}var g,e=a.document,f=e.createElement("link");if(c)g=c;else{var h=(e.body||e.getElementsByTagName("head")[0]).childNodes;g=h[h.length-1]}var i=e.styleSheets;f.rel="stylesheet",f.href=b,f.media="only x",j(function(){g.parentNode.insertBefore(f,c?g:g.nextSibling)});var k=function(a){for(var b=f.href,c=i.length;c--;)if(i[c].href===b)return a();setTimeout(function(){k(a)})};return f.addEventListener&&f.addEventListener("load",l),f.onloadcssdefined=k,k(l),f};"undefined"!=typeof exports?exports.loadCSS=b:a.loadCSS=b}("undefined"!=typeof global?global:this);
+/*! loadCSS. [c]2017 Filament Group, Inc. MIT License */ ! function(a) {
+	"use strict";
+	var b = function(b, c, d) {
+		function j(a) {
+			if (e.body) return a();
+			setTimeout(function() {
+				j(a)
+			})
+		}
+
+		function l() {
+			f.addEventListener && f.removeEventListener("load", l), f.media = d || "all"
+		}
+		var g, e = a.document,
+			f = e.createElement("link");
+		if (c) g = c;
+		else {
+			var h = (e.body || e.getElementsByTagName("head")[0]).childNodes;
+			g = h[h.length - 1]
+		}
+		var i = e.styleSheets;
+		f.rel = "stylesheet", f.href = b, f.media = "only x", j(function() {
+			g.parentNode.insertBefore(f, c ? g : g.nextSibling)
+		});
+		var k = function(a) {
+			for (var b = f.href, c = i.length; c--;)
+				if (i[c].href === b) return a();
+			setTimeout(function() {
+				k(a)
+			})
+		};
+		return f.addEventListener && f.addEventListener("load", l), f.onloadcssdefined = k, k(l), f
+	};
+	"undefined" != typeof exports ? exports.loadCSS = b : a.loadCSS = b
+}("undefined" != typeof global ? global : this);
 /*! loadCSS rel=preload polyfill. [c]2017 Filament Group, Inc. MIT License */
-!function(a){if(a.loadCSS){var b=loadCSS.relpreload={};if(b.support=function(){try{return a.document.createElement("link").relList.supports("preload")}catch(a){return!1}},b.poly=function(){for(var b=a.document.getElementsByTagName("link"),c=0;c<b.length;c++){var d=b[c];"preload"===d.rel&&"style"===d.getAttribute("as")&&(a.loadCSS(d.href,d,d.getAttribute("media")),d.rel=null)}},!b.support()){b.poly();var c=a.setInterval(b.poly,300);a.addEventListener&&a.addEventListener("load",function(){b.poly(),a.clearInterval(c)}),a.attachEvent&&a.attachEvent("onload",function(){a.clearInterval(c)})}}}(this);
+! function(a) {
+	if (a.loadCSS) {
+		var b = loadCSS.relpreload = {};
+		if (b.support = function() {
+				try {
+					return a.document.createElement("link").relList.supports("preload")
+				} catch (a) {
+					return !1
+				}
+			}, b.poly = function() {
+				for (var b = a.document.getElementsByTagName("link"), c = 0; c < b.length; c++) {
+					var d = b[c];
+					"preload" === d.rel && "style" === d.getAttribute("as") && (a.loadCSS(d.href, d, d.getAttribute("media")), d.rel = null)
+				}
+			}, !b.support()) {
+			b.poly();
+			var c = a.setInterval(b.poly, 300);
+			a.addEventListener && a.addEventListener("load", function() {
+				b.poly(), a.clearInterval(c)
+			}), a.attachEvent && a.attachEvent("onload", function() {
+				a.clearInterval(c)
+			})
+		}
+	}
+}(this);
 </script>
 <!--end async css-->
-
+<!-- TYPEKIT-->
+<script type="text/javascript">
+/*TYPE KIT*/
+(function(d) {
+	var config = {
+			kitId: 'ufb2tvv',
+			scriptTimeout: 3000,
+			async: true
+		},
+		h = d.documentElement,
+		t = setTimeout(function() {
+			h.className = h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+		}, config.scriptTimeout),
+		tk = d.createElement("script"),
+		f = false,
+		s = d.getElementsByTagName("script")[0],
+		a;
+	h.className += " wf-loading";
+	tk.src = 'https://use.typekit.net/' + config.kitId + '.js';
+	tk.async = true;
+	tk.onload = tk.onreadystatechange = function() {
+		a = this.readyState;
+		if (f || a && a != "complete" && a != "loaded") return;
+		f = true;
+		clearTimeout(t);
+		try {
+			Typekit.load(config)
+		} catch (e) {}
+	};
+	s.parentNode.insertBefore(tk, s)
+})(document);
+/*end TYPEKIT*/
+</script>
+<!--TYPEKIT-->
