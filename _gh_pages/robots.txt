@@ -8,4 +8,4 @@ Disallow: /styleguide/
 Disallow: /photos/
 Disallow: /blog/
 Disallow: /_template/
-Sitemap: http://www.secondcropcreative.com/sitemap.xml
+Sitemap: http://www.madtadders.com/sitemap.xml
