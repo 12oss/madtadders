@@ -27,6 +27,31 @@ layout: compress
 			-webkit-transition: opacity 1s ease-in-out;
 		}
 
+
+		/*
+		 * Let's target IE to respect aspect ratios and sizes for img tags containing SVG files
+		 *
+		 * [1] IE9
+		 * [2] IE10+
+		 */
+
+
+		/* 1 */
+
+		.ie9 img[src$=".svg"] {
+			width: 100%;
+		}
+
+
+		/* 2 */
+
+		@media screen and (-ms-high-contrast: active),
+		(-ms-high-contrast: none) {
+			img[src$=".svg"] {
+				width: 100%;
+			}
+		}
+
 		div.circle {
 			background-image: url(/assets/css/images/play-btn.svg);
 			background-size: contain;
@@ -66,6 +91,7 @@ layout: compress
 
 		/*END GLOBAL CRITICAL CSS*/
 	</style>
+
 
 
 </head>
