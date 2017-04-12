@@ -39,7 +39,7 @@ layout: compress
 		/* 1 */
 
 		.ie9 img[src$=".svg"] {
-			width: 100%;
+			width: 75%;
 		}
 
 
@@ -48,9 +48,10 @@ layout: compress
 		@media screen and (-ms-high-contrast: active),
 		(-ms-high-contrast: none) {
 			img[src$=".svg"] {
-				width: 100%;
+				width: 75%;
 			}
 		}
+		/*End IE SVG hacks*/
 
 		div.circle {
 			background-image: url(/assets/css/images/play-btn.svg);
