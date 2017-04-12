@@ -9683,7 +9683,7 @@ footer.footer a i:hover {
 	/* 1 */
 }
 
-.Site-header,
+header,
 .footer {
 	flex-shrink: 0;
 	/* 2 */
