@@ -1,5 +1,9 @@
 /* CSS Document */
+/* BREADCRUMBS*/
+li.breadcrumb-item a, a.breadcrumb-item, .breadcrumb-item{color: #bc8f8f !important; font-weight: 400;}
+li.breadcrumb-item a{font-weight: 600}
 
+/* BREADCRUMBS*/
 
 /*scroll to top*/
 
