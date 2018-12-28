@@ -93,7 +93,7 @@ compress_html:
 
 
 # Gems
-gems:
+plugins:
   - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
