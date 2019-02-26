@@ -5946,8 +5946,9 @@ function f1() {
 			/*Create an iFrame with autoplay set to true*/
 			var iframe = document.createElement("iframe");
 			iframe.setAttribute("src",
-				"https://www.youtube.com/embed/" + this.id + "?autoplay=1&autohide=1&border=0&wmode=opaque&enablejsapi=1&rel=0");
-
+				"https://www.youtube.com/embed/" + this.id + "?enablejsapi=1&autohide=1&border=0&wmode=opaque&autoplay=1&rel=0");
+			iframe.setAttribute("allow",
+				"autoplay");
 
 			/*Replace the YouTube thumbnail with YouTube HTML5 Player*/
 			this.parentNode.replaceChild(iframe, this);
