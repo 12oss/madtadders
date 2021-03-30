@@ -40,11 +40,11 @@
 .events-container li .day {
 	margin-top: -6px;
 	font-size: 3em;
-	color: rosybrown;
+	color: #d71921;
 }
 
 .events-container a {
-	color: rosybrown;
+	color: #d71921;
 }
 
 .events-container a:hover,
@@ -71,7 +71,7 @@
 
 .duration,
 .location {
-	font-size: 1.2rem;
+	font-size: 1.4rem;
 	-webkit-font-smoothing: antialiased;
 	font-weight: 700;
 }

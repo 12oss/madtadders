@@ -4,37 +4,46 @@ title: MadTadders | Southern, WI Live Music Cover Band
 description: Live music for bars, weddings, birthdays, class reunions & more. Fact - We've been tickling the ears of Southern, WI since we were old enough to tickle!
 image: /assets/css/images/tadders.png
 ---
-
 <style type="text/css">
 .events-container img {
 	background-color: rgba(5, 5, 5, 1);
 	padding: 10px;
 }
-.location::before{
+
+.location::before {
 	content: "\f041";
 	display: inline-block;
-	font-family:"FontAwesome";
+	font-family: "FontAwesome";
+	padding: 3px;
 }
-.duration::before{
+
+.duration::before {
 	content: "\f017";
 	display: inline-block;
-	font-family:"FontAwesome";
+	font-family: "FontAwesome";
+	padding: 3px;
 }
-.date::before{
+
+.date::before {
 	content: "\f073";
 	display: inline-block;
-	font-family:"FontAwesome";
+	font-family: "FontAwesome";
+	padding: 3px;
 }
 
-.duration{display: block;}
-.location{display: block;}
+.duration {
+	display: block;
+}
 
+.location {
+	display: block;
+}
 </style>
 <div class="creative-content max-1080">
 	<!-- begin INTRO-->
 	<section>
-		<div class="events-container">
-			<h1 class="txt-inherit txt-center">Upcoming Events</h1>
+		<div class="events-container" itemscope itemtype="https://schema.org/MusicGroup">
+			<h1 class="txt-inherit txt-center"><span itemprop="name">MadTadders</span> Upcoming Events</h1>
 			<!--<p class="txt-center">Nothing upcoming - <a href="https://m.me/madtadders" target="_blank">book us now!</a></p>-->
 			<ul>
 				<!-- E V E N T  -->
@@ -63,7 +72,33 @@ image: /assets/css/images/tadders.png
 						
 					-->
 				<!-- E V E N T  -->
-				
+				{% for events in site.data.events %}
+				<!-- E V E N T  -->
+				<li itemprop="event" itemscope itemtype="https://schema.org/Event">
+					<meta itemprop="startDate" content="{{ events.metadate }}">
+					<div class="row-eq-height">
+						<div class="col-xs-3 col-sm-2">
+							<label class="date">
+								<span class="weekday">{{ events.weekday }}</span>
+								<span class="day" style="color: #d71921">{{ events.day }}</span>
+								<span class="month">{{ events.month }}</span>
+							</label>
+						</div>
+						<div class="hidden-xs col-sm-3">
+							<img src="/images/wordmark-sq-280.png" width="100%" alt="{{ events.eventname }}" itemprop="image"/>
+						</div>
+						<div class="col-xs-9 col-sm-7">
+							<h3 style="font-size: 2rem;" itemprop="name">{{ events.eventname }}</h3>
+							<p>
+								<span class="duration" style="font-weight: 400; font-size: 1.8rem;">{{ events.time }}</span>
+								<span class="location" style="color: #d71921; font-size: 1.4rem; font-weight: 200;" itemprop="location">{{ events.location }}</span>
+							</p>
+						</div>
+					</div>
+				</li>
+				<!-- end E V E N T  -->
+				{% endfor %}
+
 			</ul>
 		</div>
 		<div class="clearfix">
