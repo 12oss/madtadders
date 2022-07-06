@@ -20,6 +20,7 @@ gem "minima"
  gem 'jekyll-paginate', group: :jekyll_plugins
  gem 'jekyll-seo-tag', group: :jekyll_plugins
  gem 'jekyll-sitemap'
+ gem "webrick", "~> 1.7"
  #gem 'jekyll-github-metadata'
 
 

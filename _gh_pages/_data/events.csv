@@ -1,11 +1,4 @@
-﻿null,weekday,day,month,eventname,time,location,metadate,,
-,SAT,5,Feb,MadTadders at The Red Baron,7pm - 11pm,"The Red Baron | Edgerton, WI",2022-02-05T19:00,,
-,SAT,7,May,MadTadders at The Red Baron,6pm - 10pm,"The Red Baron | Edgerton, WI",2022-05-07T18:00,,
-,SAT,14,May,MadTadders at Anchor,7pm - 11pm,"Anchor | Newville, WI",2022-05-14T19:00,,
-,SAT,28,May,MadTadders at The Island Bar,3pm - 7pm,"The Island Bar | Fort Atkinson, WI",2022-05-28T15:00,,
-,SUN,12,Jun,MadTadders at The Island Bar,2pm - 6pm,"The Island Bar | Fort Atkinson, WI",2022-06-12T14:00,,
-,SUN,26,Jun,MadTadders at The Red Baron,6pm - 10pm,"The Red Baron | Edgerton, WI",2022-06-26T18:00,,
-,SUN,3,July,MadTadders at The Island Bar,3pm - 7pm,"The Island Bar | Fort Atkinson, WI",2022-07-03T15:00,,
-,SUN,14,Aug,MadTadders at The Red Baron,3pm - 7pm,"The Red Baron | Edgerton, WI",2022-08-14T15:00,,
-,SAT,17,Sept,MadTadders at The Island Bar,3pm - 7pm,"The Island Bar | Fort Atkinson, WI",2022-09-17T15:00,,
-,SUN,18,Sept,MadTadders at The Red Baron,3pm - 7pm,"The Red Baron | Edgerton, WI",2022-09-18T15:00,,
+null,weekday,day,month,eventname,time,location,metadate
+,SUN,14,Aug,MadTadders at The Red Baron,3pm - 7pm,"The Red Baron | Edgerton, WI",2022-08-14T15:00
+,SAT,17,Sept,MadTadders at The Island Bar,3pm - 7pm,"The Island Bar | Fort Atkinson, WI",2022-09-17T15:00
+,SUN,18,Sept,MadTadders at The Red Baron,3pm - 7pm,"The Red Baron | Edgerton, WI",2022-09-18T15:00
