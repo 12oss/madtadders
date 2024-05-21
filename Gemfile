@@ -9,7 +9,8 @@ ruby RUBY_VERSION
 #
 # This will help ensure the proper Jekyll version is running.
 # Happy Jekylling!
-gem "jekyll"
+gem 'jekyll', '~> 4.2.0'
+
 
 # This is the default theme for new Jekyll sites. You may change this to anything you like.
 gem "minima"
@@ -21,6 +22,11 @@ gem "minima"
  gem 'jekyll-seo-tag', group: :jekyll_plugins
  gem 'jekyll-sitemap'
  gem "webrick", "~> 1.7"
+ 
+ gem 'csv'
+ gem 'base64'
+ gem 'bigdecimal'
+
  #gem 'jekyll-github-metadata'
 
 

@@ -72,7 +72,7 @@ port:             12055
 #baseurl:          "/madtadders"
 #site.github.url
 #site.baseurl
-url:              "http://madtadders.com"
+url:              "https://madtadders.com"
 encoding:         UTF-8
 
 
